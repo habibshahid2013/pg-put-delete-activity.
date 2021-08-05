@@ -71,6 +71,7 @@ function renderBooks(books) {
     // For each book, append a new row to our table
     $('#bookShelf').append(`
       <tr>
+      <tr data-id=${books[i].id}>
         <td>${book.title}</td>
         <td>${book.author}</td>
       </tr>
